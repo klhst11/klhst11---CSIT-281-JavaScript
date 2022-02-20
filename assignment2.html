@@ -5,6 +5,14 @@
 
 <style>
 
+h1 {
+  color: #0000CC;
+}
+
+p {
+  font-weight: bold;
+}
+
 </style>
 
 </head>
@@ -15,8 +23,9 @@
    // Create a variable called currentDate and store the current date using a built in JavaScript function.
 
    let pageView = 0;
-   let pageTitle = 'Page Title';
-   let pageAuthor = 'Page Author';
+   let pageTitle = 'Assignment 2: CSIT 281 - JavaScript';
+   let pageAuthor = 'Kaden Helsel';
+   let currentDate = new Date()
 
    </script>
 
@@ -41,6 +50,9 @@
       document.write(pageView);
     }
 
+    function dateAndTime() {
+      document.write(currentDate)
+    }
 
     </script>
 
@@ -48,13 +60,13 @@
 
     <h1 class="page-title"><script>pageTitles();</script></h1>
 
-    <p>by: <script>pageAuthors();</script></p>
+    <p>By: <script>pageAuthors();</script></p>
 
     <!-- Print the current date using the function you created after the page author but before the page view counter. -->
 
+    <p>Current Date & Time: <script>dateAndTime();</script></p>
+
     <small><script>pageViews();</script></small>
-
-
 
 </body>
 </html>
