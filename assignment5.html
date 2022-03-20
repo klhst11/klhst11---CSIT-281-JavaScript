@@ -12,13 +12,13 @@
       // through. This way the entire array will be listed if planets like Pluto are
       // added or removed in the future.
 
-      let animals = ['lamb', 'sheep', 'cow', 'dog', 'cat', 'chickens']
-      let numberOfAnimals = 0;
-      document.write('<h1>My Favorite Farm Animals</h1>')
+      let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupitar', 'Saturn', 'Uranus', 'Neptune']
+      let numberOfPlanets = planets.length;
+      document.write('<h1>Planets in order from closest to the sun to farthest away from the sun.</h1>')
       document.write('<ol>');
-      for (let alertLoopNumber = 0; alertLoopNumber < numberOfAnimals; alertLoopNumber++) {
+      for (let e = 0; e < numberOfPlanets; e++) {
         document.write('<li>');
-        document.write(animals[alertLoopNumber]);
+        document.write(planets[e]);
         document.write('</li>');
       }
       document.write('</ol>');
